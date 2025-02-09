@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    color: #0295da;
+    color: #059ee9;
+    color: #186bad;
+    color: #005aad;
+} */
+
+header {
+    background: #d1e3ff;
+    padding-top: 200px;
+
+}
+
+.navbar {
+    box-shadow: 0 3px 6px rgba(2, 35, 42, 0.6);
+    background: #d1e3ff;
+    opacity: .9;
+}
+
+section {
+    min-height: 100vh;
+    padding: 25px;
+    border-bottom: 1px solid #ddd;
+}
+section:nth-child(even) {
+    background-color: #d1e3ff;
+}
+
+section:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#home {
+    min-height: 50vh;
+}
+
+article {
+    color: #186bad;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer {
+    background: #00478f !important;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.social-media {
+    margin-top: 5px;
+}
+
+.social-media a i {
+    font-size: 30px;
+    color: black;
+    margin-right: 7px;
+}
+.fa-linkedin:hover {
+    background: linear-gradient(45deg, #0a66c2, #00478f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+}
+.fa-facebook:hover {
+    background: linear-gradient(45deg, #1877f2, #0d47a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+}
+.fa-instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+}
+.fa-tiktok:hover {
+    background: linear-gradient(45deg, #25f4ee, #fe2c55, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+}
+.fa-x-twitter:hover {
+    background: linear-gradient(45deg,#111, #000, #222);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+}
+
+#btn {
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    display: none;
+    z-index: 1000;
+}
