@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوليد - صيانة وتركيب استريو السيارات</title>
+    <meta name="description"
+        content="شركة الوليد متخصصة في صيانة وتركيب أنظمة الصوت والمرئيات للسيارات، تركيب أنظمة الإنذار، تحديث أنظمة الترفيه في السيارات">
+    <meta name="keywords" content="صيانة سيارات, تركيب استريو, أنظمة صوت, إنذار سيارات, ترفيه سيارات">
+    <meta name="author" content="شركة الوليد">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="الوليد - صيانة وتركيب استريو السيارات">
+    <meta property="og:description" content="شركة متخصصة في صيانة وتركيب أنظمة الصوت والمرئيات للسيارات">
+    <meta property="og:image" content="./image/logo-removebg-preview.png">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap RTL for Arabic -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Google Fonts - Cairo (Arabic font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="website icon" href="./image/logo-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>جاري التحميل...</p>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="./image/logo-removebg-preview.png" width="60" height="60" alt="شعار شركة الوليد"
+                        class="rounded-circle">
+                    <span class="ms-2 fw-bold text-primary">الوليد</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active"><i class="fas fa-home"></i> الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> عن الشركة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link"><i class="fas fa-tools"></i> خدماتنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#gallery" class="nav-link"><i class="fas fa-images"></i> معرض الأعمال</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> اتصل بنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tel:+201115679993" class="nav-link btn-call">
+                                <i class="fas fa-phone me-1"></i>اتصل الآن
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4 text-white animate-text">الوليد لصيانة وتركيب استريو السيارات</h1>
+                    <p class="lead mb-4 text-light">خبرة أكثر من 15 عاماً في تركيب وصيانة أنظمة الصوت والمرئيات للسيارات
+                        بأحدث التقنيات وأفضل الأسعار</p>
+                    <div class="mt-5">
+                        <a href="#contact" class="btn btn-primary btn-lg mx-2 animate-btn">
+                            <i class="fas fa-phone me-2"></i>اتصل الآن
+                        </a>
+                        <a href="#services" class="btn btn-outline-light btn-lg mx-2 animate-btn">
+                            <i class="fas fa-tools me-2"></i>خدماتنا
+                        </a>
+                        <a href="https://wa.me/201115679993" class="btn btn-success btn-lg mx-2 animate-btn">
+                            <i class="fab fa-whatsapp me-2"></i>واتساب
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="section-title mb-4">عن شركة الوليد</h2>
+                    <div class="about-content">
+                        <p class="fs-5 mb-4">
+                            شركة الوليد هي شركة رائدة في مجال صيانة وتركيب أنظمة الصوت والمرئيات للسيارات منذ عام 2009.
+                            نحن نقدم حلولاً متكاملة وخدمات عالية الجودة لعملائنا الكرام.
+                        </p>
+
+                        <div class="features-list">
+                            <div class="feature-item d-flex mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-check-circle text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5">خبرة طويلة</h4>
+                                    <p>أكثر من 15 عاماً من الخبرة والتميز</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item d-flex mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-user-check text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5">فنيون متخصصون</h4>
+                                    <p>فريق من الفنيين المدربين على أعلى مستوى</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item d-flex mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-shield-alt text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5">ضمان الجودة</h4>
+                                    <p>نقدم ضماناً على جميع أعمالنا وقطع الغيار</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item d-flex mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-clock text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5">خدمة سريعة</h4>
+                                    <p>خدمة 24/7 مع سرعة في التنفيذ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <img src="./image/logo-removebg-preview.png" alt="شعار شركة الوليد"
+                        class="img-fluid about-img rounded shadow">
+                    <div class="stats mt-4">
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <div class="stat-box p-3">
+                                    <h3 class="text-primary">15+</h3>
+                                    <p>سنوات خبرة</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="stat-box p-3">
+                                    <h3 class="text-primary">5000+</h3>
+                                    <p>عميل راضي</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-box p-3">
+                                    <h3 class="text-primary">100%</h3>
+                                    <p>رضا العملاء</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-box p-3">
+                                    <h3 class="text-primary">24/7</h3>
+                                    <p>خدمة عملاء</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section py-5 bg-light" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">خدماتنا المتميزة</h2>
+                    <p class="lead">نقدم مجموعة متكاملة من الخدمات لسيارتك</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card card h-100 border-0 shadow-sm hover-shadow">
+                        <div class="card-img-top text-center py-4">
+                            <i class="fas fa-volume-up fa-4x text-primary"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">تركيب أنظمة الصوت</h4>
+                            <p class="card-text">
+                                تركيب وتعديل أنظمة الصوت المتطورة مع أحدث الماركات العالمية
+                                وأفضل جودة صوت
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-2">اطلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card card h-100 border-0 shadow-sm hover-shadow">
+                        <div class="card-img-top text-center py-4">
+                            <i class="fas fa-tv fa-4x text-primary"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">شاشات العرض</h4>
+                            <p class="card-text">
+                                تركيب شاشات عرض بأنواع وأحجام مختلفة
+                                مع أنظمة ملاحة وتقنيات متطورة
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-2">اطلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card card h-100 border-0 shadow-sm hover-shadow">
+                        <div class="card-img-top text-center py-4">
+                            <i class="fas fa-bell fa-4x text-primary"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">أنظمة الإنذار</h4>
+                            <p class="card-text">
+                                تركيب أنظمة إنذار متطورة لحماية سيارتك
+                                مع تقنيات التحكم عن بعد والتتبع
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-2">اطلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card card h-100 border-0 shadow-sm hover-shadow">
+                        <div class="card-img-top text-center py-4">
+                            <i class="fas fa-tools fa-4x text-primary"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">الصيانة الشاملة</h4>
+                            <p class="card-text">
+                                صيانة جميع أنظمة الترفيه في السيارات
+                                مع قطع غيار أصلية وضمان على العمل
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-2">اطلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">آراء عملائنا</h2>
+                    <p class="lead">ماذا يقول عملاؤنا عن خدماتنا</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="testimonial-card card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="client-img me-3">
+                                <i class="fas fa-user-circle fa-3x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">أحمد محمد</h5>
+                                <small>عميل منذ 3 سنوات</small>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            "خدمة ممتازة وفريق محترف. قاموا بتركيب نظام صوت رائع لسيارتي بأفضل الأسعار."
+                        </p>
+                        <div class="stars text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="client-img me-3">
+                                <i class="fas fa-user-circle fa-3x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">سارة عبدالله</h5>
+                                <small>عميلة منذ سنة</small>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            "أشكر فريق الوليد على الاحترافية في العمل وضمان الجودة. أنصح الجميع بالتعامل معهم."
+                        </p>
+                        <div class="stars text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="client-img me-3">
+                                <i class="fas fa-user-circle fa-3x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">خالد محمود</h5>
+                                <small>عميل منذ 5 سنوات</small>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            "الأسعار مناسبة والخدمة سريعة. أفضل مكان لصيانة أنظمة الصوت في السيارات."
+                        </p>
+                        <div class="stars text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5 bg-light" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">معرض أعمالنا</h2>
+                    <p class="lead">شاهد بعضاً من أعمالنا التي نفخر بها</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Gallery items will be loaded via JavaScript -->
+                <div id="gallery-container" class="row">
+                    <!-- Dynamic content -->
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button id="loadMore" class="btn btn-primary btn-lg">
+                    <i class="fas fa-plus me-2"></i>عرض المزيد
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">اتصل بنا</h2>
+                    <p class="lead">نحن هنا لخدمتك في أي وقت</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-info">
+                        <div class="info-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-phone-alt fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4>اتصل بنا</h4>
+                                    <p class="mb-1">
+                                        <a href="tel:+201115679993" class="text-dark">+20 111 567 9993</a>
+                                    </p>
+                                    <p class="mb-0">
+                                        <a href="tel:+201554321000" class="text-dark">+20 155 432 1000</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4>البريد الإلكتروني</h4>
+                                    <p class="mb-0">
+                                        <a href="mailto:walid32343@gmail.com" class="text-dark">walid32343@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4>عنواننا</h4>
+                                    <p class="mb-0">ش 18 مدينة التحرير، امبابة، الجيزة، مصر</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <h4 class="mb-3">ساعات العمل</h4>
+                            <p class="mb-1">السبت - الخميس: 9 ص - 10 م</p>
+                            <p class="mb-0">الجمعة: 2 م - 10 م</p>
+                        </div>
+
+                        <!-- Google Maps Placeholder -->
+                        <div class="map-placeholder mt-4">
+                            <div class="map-frame rounded shadow">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.849732982493!2d31.208415315114634!3d30.04518848188329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzQyLjciTiAzMcKwMTInMzMuNyJF!5e0!3m2!1sen!2seg!4v1618821491230!5m2!1sen!2seg"
+                                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="contact-form bg-white p-4 rounded shadow">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">الاسم الكامل *</label>
+                                    <input type="text" class="form-control" id="name" required
+                                        placeholder="أدخل اسمك الكامل">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">رقم الهاتف *</label>
+                                    <input type="tel" class="form-control" id="phone" required
+                                        placeholder="أدخل رقم هاتفك">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="service" class="form-label">نوع الخدمة المطلوبة</label>
+                                <select class="form-select" id="service">
+                                    <option value="" selected>اختر الخدمة</option>
+                                    <option value="sound">تركيب أنظمة صوت</option>
+                                    <option value="screen">شاشات عرض</option>
+                                    <option value="alarm">أنظمة إنذار</option>
+                                    <option value="maintenance">صيانة</option>
+                                    <option value="consultation">استشارة فنية</option>
+                                    <option value="other">خدمة أخرى</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">الرسالة *</label>
+                                <textarea class="form-control" id="message" rows="5" required
+                                    placeholder="اكتب رسالتك هنا..."></textarea>
+                            </div>
+
+                            <div class="text-start">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>إرسال الرسالة
+                                </button>
+                                <button type="reset" class="btn btn-outline-secondary btn-lg me-2">
+                                    <i class="fas fa-redo me-2"></i>إعادة تعيين
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Quick Contact -->
+                    <div class="quick-contact mt-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <a href="https://wa.me/201115679993" class="btn btn-success w-100">
+                                    <i class="fab fa-whatsapp me-2"></i>محادثة واتساب
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="tel:+201115679993" class="btn btn-outline-primary w-100">
+                                    <i class="fas fa-phone me-2"></i>اتصال فوري
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/201115679993" class="whatsapp-float" target="_blank" title="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center text-lg-start mb-3 mb-lg-0">
+                    <div class="footer-brand d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <img src="./image/logo-removebg-preview.png" width="50" alt="شعار الوليد">
+                        <span class="ms-2 fw-bold fs-4 text-white">الوليد</span>
+                    </div>
+                    <p class="mt-2 mb-0">خبرة التميز في صيانة وتركيب سياراتك</p>
+                </div>
+
+                <div class="col-lg-4 text-center mb-3 mb-lg-0">
+                    <div class="social-links">
+                        <a href="#" class="social-link mx-2" title="فيسبوك">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="#" class="social-link mx-2" title="تويتر">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="#" class="social-link mx-2" title="انستجرام">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://wa.me/201115679993" class="social-link mx-2" title="واتساب">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 text-center text-lg-end">
+                    <p class="mb-0">
+                        <i class="fas fa-copyright me-1"></i>
+                        <span id="currentYear"></span> جميع الحقوق محفوظة لشركة الوليد
+                    </p>
+                    <p class="small mt-2">تصميم وتطوير: فريق الوليد</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="footer-links">
+                        <a href="#home" class="text-white mx-2">الرئيسية</a> |
+                        <a href="#about" class="text-white mx-2">عن الشركة</a> |
+                        <a href="#services" class="text-white mx-2">خدماتنا</a> |
+                        <a href="#contact" class="text-white mx-2">اتصل بنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary rounded-circle">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- SweetAlert2 for notifications -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Main JavaScript -->
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>
